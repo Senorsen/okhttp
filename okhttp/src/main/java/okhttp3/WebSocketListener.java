@@ -34,6 +34,12 @@ public abstract class WebSocketListener {
   public void onMessage(WebSocket webSocket, ByteString bytes) {
   }
 
+  public void onPing(WebSocket webSocket) {
+  }
+
+  public void onPong(WebSocket webSocket, int sendPingCount, int pongCount) {
+  }
+
   /** Invoked when the peer has indicated that no more incoming messages will be transmitted. */
   public void onClosing(WebSocket webSocket, int code, String reason) {
   }
